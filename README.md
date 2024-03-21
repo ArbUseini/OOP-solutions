@@ -1,2 +1,0 @@
-# OOP-solutions
-everything OOP
