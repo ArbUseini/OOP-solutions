@@ -68,7 +68,7 @@ void table(W *w, int n){
 int main() {
     int n;
     scanf("%d", &n);
-    W workers[n];
+    W workers[100];
     int i;
     for (i = 0; i < n; ++i) {
         scanf("%s", workers[i].name);
