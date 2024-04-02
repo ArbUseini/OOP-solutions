@@ -2,7 +2,7 @@
 #include <cstring>
 using namespace std;
 
-// does not work on int operator[](char c)
+// your code here
 
 class Character{
     char c;
