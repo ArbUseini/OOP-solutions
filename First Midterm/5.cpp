@@ -27,7 +27,6 @@ void bestPlayer(ComputerGame *array, int n) {
       bestPlayerIndex = -1; // reset
     }
     if (array[i].numberOfPlayers == maxPlayers) {
-      // iterate over players
       for (int j = 0; j < array[i].numberOfPlayers; j++) {
         if (array[i].players[j].points > maxPoints ||
             (array[i].players[j].points == maxPlayers &&
@@ -42,8 +41,9 @@ void bestPlayer(ComputerGame *array, int n) {
   }
 
   if (bestPlayerIndex != -1) {
-    cout << "The best player " << array->players[bestPlayerIndex].name
-         << " plays the game " << array[bestGameIndex].game << endl;
+    cout << "Najdobar igrac e igracot so korisnicko ime "
+         << array->players[bestPlayerIndex].name << " koj ja igra igrata "
+         << array[bestGameIndex].game << endl;
   }
 }
 
